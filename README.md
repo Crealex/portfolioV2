@@ -11,6 +11,6 @@ the second version of my portfolio with new (and more accurate) technologies and
 
 ## Road map
 
-- [ ] add custom ----------
+- [ ] add custom font
 - [ ] continue home page
 - [ ] add some basics rules style
