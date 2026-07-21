@@ -1,10 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Settings from "./pages/Settings";
+import CV from "./pages/CV";
+import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound.tsx"
+import Navbar from "./components/global/Navbar.tsx";
 
 function App() {
-
-  return <div>
-  <h1>Alexandre Tomasi</h1>
-  <p className="">Welcome to my portfolio</p>
-  </div>;
+  return (
+    <BrowserRouter>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/settings" element={<Settings />} />
+				<Route path="/cv" element={<CV />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
