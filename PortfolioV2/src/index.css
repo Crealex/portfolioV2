@@ -36,18 +36,34 @@
   --noise: 0;
 }
 
-h1 {
-  @apply text-4xl;
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../static/fonts/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
 }
 
-h2 {
-  @apply text-3xl;
-}
+@layer base {
+	body {
+		font-family: "JetBrains Mono";
+		@apply text-justify;
+	}
+  h1 {
+    @apply text-4xl text-center my-6;
+  }
 
-h3 {
-  @apply text-2xl;
-}
+  h2 {
+    @apply text-3xl text-center my-4;
+  }
 
-h4 {
-  @apply text-xl;
+  h3 {
+    @apply text-2xl text-center my-4;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  .page-content {
+    @apply mx-26;
+  }
 }

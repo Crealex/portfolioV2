@@ -1,7 +1,7 @@
 
 export default function Projects() {
 	return (
-	<div>
+	<div className="page-content">
 			<h2>My Projects</h2>
 		</div>
 	)

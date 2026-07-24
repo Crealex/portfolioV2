@@ -2,7 +2,7 @@ import Hobbies from "../components/Home/Hobbies";
 
 export default function Home() {
   return (
-    <div>
+    <div className="page-content">
       <h1>Home</h1>
       <p>
         Welcome to my own website, let me introduce you to my projects and
@@ -13,14 +13,14 @@ export default function Home() {
       I'm 25 years old and i'm passionned by computer sciences, music, internet,
       video games and development
       <h3>About me</h3>
-      <div className="collapse collapse-plus bg-base-200 border border-base-300">
+      <div className="collapse collapse-plus bg-base-200 border my-2">
         <input type="radio" name="home" defaultChecked />
         <div className="collapse-title font-semibold">My hobbies</div>
         <div className="collapse-content text-sm">
           <Hobbies />
         </div>
       </div>
-      <div className="collapse collapse-plus bg-base-200 border border-base-300">
+      <div className="collapse collapse-plus bg-base-200 border my-2">
         <input type="radio" name="home" />
         <div className="collapse-title font-semibold">Stack competence</div>
         <div className="collapse-content text-sm">
@@ -28,7 +28,7 @@ export default function Home() {
           instructions sent to your email.
         </div>
       </div>
-      <div className="collapse collapse-plus bg-base-200 border border-base-300">
+      <div className="collapse collapse-plus bg-base-200 border my-2">
         <input type="radio" name="home" />
         <div className="collapse-title font-semibold">My parcours</div>
         <div className="collapse-content text-sm">
